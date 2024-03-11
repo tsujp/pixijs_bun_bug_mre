@@ -21,11 +21,11 @@ const server = Bun.serve({
         return new Response('BAD')
     }
 })
+
 // Trap cleanup.
 process.on('SIGINT', async () => {
     console.log('Cleaning up...')
 
-    // HTTP server.
     server.stop()
 
     console.log('Done')
