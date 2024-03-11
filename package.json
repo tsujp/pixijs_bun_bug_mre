@@ -1,0 +1,23 @@
+{
+  "name": "pixijs_bun_bug",
+  "private": true,
+  "version": "0.1.0",
+  "author": "Jordan Ellis 'tsujp' Coppard <$(printf 'amMrZ2l0QHd6Lmh0Cg==' | base64 -d)>",
+  "license": "BSD-3-Clause",
+  "type": "module",
+  "scripts": {
+    "ver:bun": "bun run build_bun.ts && bun run serve.ts",
+    "ver:esbuild": "bun run build_esbuild.ts && bun run serve.ts"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "dependencies": {
+    "pixi.js": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.0",
+    "esbuild": "^0.20.1"
+  }
+}
